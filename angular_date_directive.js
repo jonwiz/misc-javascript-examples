@@ -9,7 +9,7 @@ angular.module('myApp')
             
             restrict: 'A',
             link: function(scope, element, attrs) {
-                var format = attrs.nhDatePicker !== '' ? attrs.nhDatePicker : 'M d, yy';
+                var format = attrs.myDatePicker !== '' ? attrs.myDatePicker : 'M d, yy';
                 element.datepicker("option", "dateFormat", format);
             }
 
